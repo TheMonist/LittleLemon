@@ -13,7 +13,7 @@ class Booking(models.Model):
 
 
 class Menu(models.Model):
-    name = models.CharField(max_length=200)
+    title = models.CharField(max_length=200)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     inventory = models.IntegerField(default=5)
 
